@@ -5,23 +5,6 @@ public class Rat_trap_maze {
     private static int N; // Size of the maze
     private static int[][] maze; // The maze itself
 
-    public static void main(String[] args) {
-        N = 4; // Size of the maze (N x N)
-        maze = new int[][] {
-                { 1, 0, 0, 0 },
-                { 1, 1, 0, 1 },
-                { 0, 1, 0, 0 },
-                { 1, 1, 1, 1 }
-        };
-
-        if (solveMaze()) {
-            System.out.println("Solution exists.");
-            printSolution();
-        } else {
-            System.out.println("Solution does not exist.");
-        }
-    }
-
     // Function to solve the maze using backtracking
     private static boolean solveMaze() {
         int[][] sol = new int[N][N];
@@ -76,6 +59,23 @@ public class Rat_trap_maze {
                 System.out.print(" " + maze[i][j] + " ");
             }
             System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        N = 4; // Size of the maze (N x N)
+        maze = new int[][] {
+                { 1, 0, 0, 0 },
+                { 1, 1, 0, 1 },
+                { 0, 1, 0, 0 },
+                { 1, 1, 0, 1 }
+        };
+
+        if (solveMaze()) {
+            System.out.println("Solution exists.");
+            printSolution();
+        } else {
+            System.out.println("Solution does not exist.");
         }
     }
 }
