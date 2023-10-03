@@ -5,7 +5,7 @@ import java.util.List;
 public class TugOfWar {
 
     public static void main(String[] args) {
-        int[] weights = { 1, 2, 3, 4, 5, 6 g};
+        int[] weights = { 1, 2, 3, 4, 5, 6 };
         List<Integer> result = findTugOfWar(weights);
 
         System.out.println("Set 1: " + result);
