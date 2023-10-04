@@ -71,7 +71,7 @@ public class NQueens {
     }
 
     public static void main(String[] args) {
-        int N = 8; // Change N to the desired board size
+        int N = 4; // Change N to the desired board size
         NQueens nQueens = new NQueens(N);
         nQueens.solve();
     }
